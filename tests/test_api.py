@@ -11,7 +11,7 @@ def test_health():
     assert response.json()["status"] == "ok"
 
 
-def test_baseline_endpoint():
+de test_baseline_endpoint():
     data = client.get("/baseline").json()
     assert data["n"] == 5000
     assert data["threshold"] == 3.0
